@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Planner</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="scripts.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Task Planner</h1>
+        <div id="user-greeting"></div>
+        <button id="logout" style="display:none;">Logout</button>
+        <a href="index.html">Home</a>
+    </header>
+    
+    <main>
+        <section id="select-day">
+            <h2>Select Day</h2>
+            <select id="day-select">
+                <option value="sunday">Sunday</option>
+                <option value="monday">Monday</option>
+                <option value="tuesday">Tuesday</option>
+                <option value="wednesday">Wednesday</option>
+                <option value="thursday">Thursday</option>
+                <option value="friday">Friday</option>
+                <option value="saturday">Saturday</option>
+            </select>
+        </section>
+        
+        <section id="add-task">
+            <h2>Add Task</h2>
+            <input type="text" id="task-desc" placeholder="Task Description">
+            <input type="time" id="task-time">
+            <select id="importance">
+                <option value="1">1 - Least Important</option>
+                <option value="2">2</option>
+                <option value="3" selected>3</option>
+                <option value="4">4</option>
+                <option value="5">5 - Most Important</option>
+            </select>
+            <button id="add-task-btn">Add Task</button>
+        </section>
+        
+        <section id="add-special-task">
+            <h2>Add Special Task</h2>
+            <input type="text" id="special-task-desc" placeholder="Special Task Description">
+            <input type="number" id="special-task-max" placeholder="Max Value">
+            <button id="add-special-task-btn">Add Special Task</button>
+        </section>
+        
+        <section id="tasks-for-day">
+            <h2>Tasks for <span id="selected-day"></span></h2>
+            <ul id="task-list"></ul>
+        </section>
+        
+        <section id="special-tasks-for-day">
+            <h2>Special Tasks for <span id="selected-day-special"></span></h2>
+            <ul id="special-task-list"></ul>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Weekly Planner</h1>
+        <nav>
+            <a href="planner.html">Planner</a>
+            <a href="login.html">Login</a>
+            <span id="user-greeting"></span>
+            <button id="logout" style="display: none;">Logout</button>
+        </nav>
+    </header>
+    <main>
+        <h2>Tasks for <span id="current-day"></span></h2>
+        <section>
+            <h3>Unspecified Tasks</h3>
+            <ul id="unspecified-task-list"></ul>
+        </section>
+        <section>
+            <h3>Morning Tasks</h3>
+            <ul id="morning-task-list"></ul>
+        </section>
+        <section>
+            <h3>Afternoon Tasks</h3>
+            <ul id="afternoon-task-list"></ul>
+        </section>
+        <section>
+            <h3>Evening Tasks</h3>
+            <ul id="evening-task-list"></ul>
+        </section>
+        <section>
+            <h3>Special Tasks</h3>
+            <ul id="special-task-list"></ul>
+        </section>
+    </main>
+    <script type="module" src="scripts.js"></script>
+</body>
+</html>
