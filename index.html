@@ -8,11 +8,12 @@
 </head>
 <body>
     <header>
-        <h1>Weekly Planner</h1>
+        <h1>My day</h1>
         <nav>
-            <a href="planner.html">Planner</a>
-            <a href="login.html">Login</a>
             <span id="user-greeting"></span>
+            <a href="planner.html">Planner</a>
+            <a href="login.html" id="login-link">Login</a>
+            <a href="results.html">Results</a>
             <button id="logout" style="display: none;">Logout</button>
         </nav>
     </header>
@@ -38,6 +39,11 @@
             <h3>Special Tasks</h3>
             <ul id="special-task-list"></ul>
         </section>
+
+        <div id="day-actions">
+            <button id="end-day-btn">End Day</button>
+            <button id="reset-day-btn">Reset Day</button>
+        </div>
     </main>
     <script type="module" src="scripts.js"></script>
 </body>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore-compat.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
+</head>
+<body>
+    <header>
+        <h1>Results</h1>
+        <nav>
+            <span id="user-greeting"></span>
+            <a href="index.html">Home</a>
+            <a href="planner.html">Planner</a>
+            <button id="logout" style="display: none;">Logout</button>
+        </nav>
+    </header>
+    <main>
+        <h1>Task Completion Results</h1>
+        <div>
+            <button id="all-time-btn">All Time</button>
+            <button id="last-30-days-btn">Last 30 Days</button>
+            <button id="last-7-days-btn">Last 7 Days</button>
+        </div>
+        <canvas id="resultsChart" width="400" height="200"></canvas>
+    </main>
+    <script src="results.js"></script>
+</body>
+</html>

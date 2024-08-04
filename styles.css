@@ -1,68 +1,128 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
 }
 
 header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
     text-align: center;
 }
 
-nav a {
-    color: white;
-    margin: 0 1rem;
+header h1 {
+    margin: 0;
+}
+
+header div {
+    margin-top: 10px;
+}
+
+header a, header button {
+    margin: 5px;
+    padding: 5px 10px;
     text-decoration: none;
+    color: #fff;
+    background-color: #444;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+header a:hover, header button:hover {
+    background-color: #555;
+}
+
+header nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+}
+
+header nav a:hover {
+    text-decoration: underline;
 }
 
 main {
-    padding: 1rem;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-h2 {
-    color: #333;
+main h2 {
+    text-align: center;
 }
 
 section {
-    margin: 1rem 0;
+    margin-bottom: 20px;
 }
 
 ul {
-    list-style: none;
+    list-style-type: none;
     padding: 0;
 }
 
 li {
-    background: #fff;
-    margin: 0.5rem 0;
-    padding: 0.5rem;
+    background-color: #f9f9f9;
+    margin: 5px 0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     border: 1px solid #ddd;
-    cursor: pointer;
+    border-radius: 5px;
 }
 
 li.done {
     text-decoration: line-through;
-    color: #aaa;
+    color: #888;
 }
 
-button {
-    background-color: #4CAF50;
-    color: white;
+li button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #d9534f;
+    color: #fff;
     border: none;
-    padding: 0.5rem 1rem;
+    border-radius: 5px;
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #45a049;
+li button:hover {
+    background-color: #c9302c;
 }
 
-input, select {
-    margin: 0.5rem 0;
-    padding: 0.5rem;
-    width: 100%;
-    box-sizing: border-box;
+li button.add, li button.subtract {
+    background-color: #5bc0de;
+}
+
+li button.add:hover, li button.subtract:hover {
+    background-color: #31b0d5;
+}
+
+#end-day-btn, #reset-day-btn {
+    margin: 10px 5px;
+    padding: 10px 15px;
+    background-color: #5cb85c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#end-day-btn:hover, #reset-day-btn:hover {
+    background-color: #4cae4c;
+}
+
+button {
+    margin: 5px;
+    padding: 10px;
+}
+
+canvas {
+    margin-top: 20px;
 }
